@@ -38,7 +38,7 @@ def chat(user, autoclick):
         current_time = datetime.now().time()
         time_string = current_time.strftime("%H:%M:%S")
         if time_string == time_check and can_write == True:
-            pyautogui.write(f'{user}: {rows_list[i]}', interval=0.01)
+            pyautogui.write(f'{rows_list[i]}', interval=0.01)
             pyautogui.press('enter')
             i+=2
             time_check = ((datetime.strptime(time_check, '%H:%M:%S') + seconds_to_add).time()).strftime("%H:%M:%S")
