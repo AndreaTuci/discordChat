@@ -8,7 +8,7 @@ def chat(user, autoclick):
     lines = (line.rstrip() for line in f_in)
     rows_list = list(line for line in lines if line)
     can_write = True
-    time_check = '16:04:00'
+    time_check = '16:46:00'
     print(f'Utente: {user}')
     print(f'Autoclick: {autoclick}')
     i = 0
